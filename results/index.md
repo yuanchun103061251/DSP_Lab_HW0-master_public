@@ -30,13 +30,17 @@ The project is related to
 				```
 	* images		
 		# the original image
-		<img src="/files/image.jpg" width="24%"/>   <br />
+		<img src="/files/image.jpg" width="24%"/>   <br />
+		<img src="/another_picture.jpg" width="24%"/>   <br />
 		# the horizontally flipped image
-		<img src="/files/horizontally_flipped.jpg" width="24%"/>   <br />
+		<img src="/horizontally_flipped.jpg" width="24%"/>   <br />   
+		<img src="/Kflip_horizontal.jpg" width="24%"/>   <br />
 		# image of the vertically flipped image
-		<img src="/files/vertically_flipped.jpg" width="24%"/>   <br />
+		<img src="/files/vertically_flipped.jpg" width="24%"/>   <br />
+		<img src="/Kflip_vertical.jpg" width="24%"/>   <br />
 		# image of the vertically and horizontally flipped image
-		<img src="/files/horizontally_vertically_flipped.jpg" width="24%"/>   <br />
+		<img src="/files/horizontally_vertically_flipped.jpg" width="24%"/>   <br />
+		<img src="/Kflip_horizontal_vertical.jpg" width="24%"/>   <br />
 
 2. rotation algorithm	
 	* design flow
@@ -92,11 +96,16 @@ The project is related to
 	* images	
 		# the original image
 		<img src="/files/image.jpg" width="24%"/>   <br />
+		<img src="/another_picture.jpg" width="24%"/>   <br />
 		# the image rotated by 30 degree
 		<img src="/30_degree.jpg" width="24%"/>   <br />
+		<img src="/K30_degree.jpg" width="24%"/>   <br />
 		# the image rotated by 60 degree
 		<img src="/60_degree.jpg" width="24%"/>   <br />
+		<img src="/K60_degree.jpg" width="24%"/>   <br />
 		# the image rotated by 120 degree
 		<img src="/120_degree.jpg" width="24%"/>   <br />
+		<img src="/K120_degree.jpg" width="24%"/>   <br />
 		# the image rotated by 288 degree
 		<img src="/288_degree.jpg" width="24%"/>   <br />
+		<img src="/K288_degree.jpg" width="24%"/>   <br />
