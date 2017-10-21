@@ -1,3 +1,4 @@
+%% I: image from TA   K: image downloaded by myself
 close all;
 clear all;
 clc;
@@ -30,7 +31,7 @@ K33 = flip(K,2);
 I4 = rotation(I, pi/6);
 I44 = rotation(I, pi/3);
 I444 = rotation(I, pi/1.5);
-I4444 = rotation(I, pi*1.6);
+I4444 = rotation(I, pi*1.6); 
 
 K4 = rotation(K, pi/6);
 K44 = rotation(K, pi/3);
