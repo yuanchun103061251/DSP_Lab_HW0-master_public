@@ -9,7 +9,7 @@ The project is related to
 
 ## Implementation
 1. flipping algorithm
-	# design flow
+	* design flow
 		* horizontal flipping
 			1. devide a RGB image to three parts, red, green, and blue.
 			2. flip every channel in the horizontal direction, implemented by the following codes:
@@ -28,8 +28,7 @@ The project is related to
 				```
 				R_flip(h, w) = R(height-h+1, width-w+1);
 				```
-	# images
-		
+	* images		
 		# the original image
 		<img src="/files/image.jpg" width="24%"/>   <br />
 		# the horizontally flipped image
@@ -40,7 +39,7 @@ The project is related to
 		<img src="/files/horizontally_vertically_flipped.jpg" width="24%"/>   <br />
 
 2. rotation algorithm	
-	#design flow
+	* design flow
 		1. devide a RGB image to three parts, red, green, and blue.
 		2. set a rotation matrix:
 			```
@@ -56,34 +55,37 @@ The project is related to
 			width_new = ceil(right_width) - floor(left_width);
 			height_new = ceil(right_height) - floor(left_height);
 			```
+			
 		5. inverse the matrix
 			```
 			matrix_inverse = [cos(radius) sin(radius) ; -sin(radius) cos(radius)]; 
+			
 			```
 		6. shift and rotate back to the original
 			```
 			aaa = [x_new-x_shift; y_new-y_shift]; 
-        		reg= matrix_inverse*aaa;
-        		xx = reg(1);
-        		yy = reg(2);
+        	reg= matrix_inverse*aaa;
+        	xx = reg(1);
+        	yy = reg(2);
 			```
 		7. find integer points near the point rotated back
 			```
 			x1 = ceil(xx);
-        		x2 = floor(xx);
-        		y1 = ceil(yy);
-        		y2 = floor(yy);
+        	x2 = floor(xx);
+        	y1 = ceil(yy);
+        	y2 = floor(yy);
 			```
 		8. calculate the final value of every point by interpolation
 			```
 			wa = (xx-x2)/(x1-x2);
-            		wb = (yy-y2)/(y1-y2);
-           		w1 = (1-wa)*(1-wb);
-            		w2 = wa*(1-wb);
-            		w3 = wa*wb;
-            		w4 = (1-wa)*wb;
-            		r = double(R(ceil(yy),ceil(xx))*w3+R(ceil(yy),floor(xx))*w2+R(floor(yy),floor(xx))*w1+R(floor(yy),ceil(xx))*w4); 
-            		g = double(G(ceil(yy),ceil(xx))*w3+G(ceil(yy),floor(xx))*w2+G(floor(yy),floor(xx))*w1+G(floor(yy),ceil(xx))*w4); 
-            		b=  double(B(ceil(yy),ceil(xx))*w3+B(ceil(yy),floor(xx))*w2+B(floor(yy),floor(xx))*w1+B(floor(yy),ceil(xx))*w4); 
+            wb = (yy-y2)/(y1-y2);
+           	w1 = (1-wa)*(1-wb);
+            w2 = wa*(1-wb);
+            w3 = wa*wb;
+            w4 = (1-wa)*wb;
+            r = double(R(ceil(yy),ceil(xx))*w3+R(ceil(yy),floor(xx))*w2+R(floor(yy),floor(xx))*w1+R(floor(yy),ceil(xx))*w4); 
+            g = double(G(ceil(yy),ceil(xx))*w3+G(ceil(yy),floor(xx))*w2+G(floor(yy),floor(xx))*w1+G(floor(yy),ceil(xx))*w4); 
+            b=  double(B(ceil(yy),ceil(xx))*w3+B(ceil(yy),floor(xx))*w2+B(floor(yy),floor(xx))*w1+B(floor(yy),ceil(xx))*w4); 
 			```
+		9. combine r, g, and b to build the image after rotation
 		
