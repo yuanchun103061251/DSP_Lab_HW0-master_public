@@ -89,3 +89,14 @@ The project is related to
 			```
 		9. combine r, g, and b to build the image after rotation
 		
+	* images	
+		# the original image
+		<img src="/files/image.jpg" width="24%"/>   <br />
+		# the image rotated by 30 degree
+		<img src="/30_degree.jpg" width="24%"/>   <br />
+		# the image rotated by 60 degree
+		<img src="/60_degree.jpg" width="24%"/>   <br />
+		# the image rotated by 120 degree
+		<img src="/120_degree.jpg" width="24%"/>   <br />
+		# the image rotated by 288 degree
+		<img src="/288_degree.jpg" width="24%"/>   <br />
