@@ -35,13 +35,13 @@ The project is related to
 		<table border=1>
 		<tr>
 		<td>
-		<img src="placeholder.jpg" width="24%"/>
-		<img src="placeholder.jpg"  width="24%"/>
-		<img src="placeholder.jpg" width="24%"/>
-		<img src="placeholder.jpg" width="24%"/>
+		<img src="/results/image.jpg" width="24%"/>
+		<img src="/results/horizontally_flipped.jpg" width="24%"/>
+		<img src="/results/vertically_flipped.jpg" width="24%"/>
+		<img src="/results/horizontally_vertically_flipped.jpg" width="24%"/>
 		</td>
 		</tr>
-
+		!(horizontally_flipped.jpg)
 		<tr>
 		<td>
 		<img src="placeholder.jpg" width="24%"/>
