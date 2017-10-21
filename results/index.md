@@ -9,7 +9,7 @@ The project is related to
 
 ## Implementation
 1. flipping algorithm
-	* design flow
+	# design flow
 		* horizontal flipping
 			1. devide a RGB image to three parts, red, green, and blue.
 			2. flip every channel in the horizontal direction, implemented by the following codes:
@@ -28,29 +28,18 @@ The project is related to
 				```
 				R_flip(h, w) = R(height-h+1, width-w+1);
 				```
-	* images
+	# images
 		
-		## image of the horizontally flipped image
+		# the original image
+		<img src="/files/image.jpg" width="24%"/>   <br />
+		# the horizontally flipped image
+		<img src="/files/horizontally_flipped.jpg" width="24%"/>   <br />
+		# image of the vertically flipped image
+		<img src="/files/vertically_flipped.jpg" width="24%"/>   <br />
+		# image of the vertically and horizontally flipped image
+		<img src="/files/horizontally_vertically_flipped.jpg" width="24%"/>   <br />
 
-		<table border=1>
-		<tr>
-		<td>
-		<img src="/results/image.jpg" width="24%"/>
-		<img src="/results/horizontally_flipped.jpg" width="24%"/>
-		<img src="/results/vertically_flipped.jpg" width="24%"/>
-		<img src="/results/horizontally_vertically_flipped.jpg" width="24%"/>
-		</td>
-		</tr>
-		!(horizontally_flipped.jpg)
-		<tr>
-		<td>
-		<img src="placeholder.jpg" width="24%"/>
-		<img src="placeholder.jpg"  width="24%"/>
-		<img src="placeholder.jpg" width="24%"/>
-		<img src="placeholder.jpg" width="24%"/>
-		</td>
-		</tr>
-
-		</table>
-
-
+2. rotation algorithm	
+	#design flow
+		1. 
+		
